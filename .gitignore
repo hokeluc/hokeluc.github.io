@@ -1,2 +1,6 @@
 .DS_Store
 Thumbs.db
+.claude/
+DECISIONS.md
+RESOURCES.md
+REQUIREMENTS.md
