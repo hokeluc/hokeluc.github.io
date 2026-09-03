@@ -1,34 +1,132 @@
-/* A deliberately small starting point.
-   It exists to prove one thing: this file is loading.
-   If you can see spacing and a readable line length, the path in index.html works.
-
-   Delete all of it whenever you want. */
-
 :root {
-  /* Makes the page follow the reader's light or dark mode setting, for free. */
   color-scheme: light dark;
+  --bg: #fafaf8;
+  --fg: #1a1a1a;
+  --accent: #3b5bdb;
+  --muted: #6b6b6b;
+  --border: #e3e1db;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17171a;
+    --fg: #ededed;
+    --accent: #7c94f5;
+    --muted: #a3a3a3;
+    --border: #2e2e33;
+  }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
+  background: var(--bg);
+  color: var(--fg);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-
-  /* 65ch caps the line at about 65 characters. Long lines are genuinely hard
-     to read, and this single rule does more for legibility than anything else
-     in this file. */
   max-width: 65ch;
-
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 3rem 1.5rem 6rem;
   line-height: 1.6;
   font-size: 1.125rem;
 }
 
+a {
+  color: var(--accent);
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   line-height: 1.1;
-  margin-bottom: 1.5rem;
+  margin: 0 0 0.75rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 1.2rem;
+  margin: 0 0 2.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
 }
 
 p {
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.widget {
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.widget h2 {
+  margin-bottom: 0.5rem;
+}
+
+.widget-credit {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.link-list li {
+  margin: 0;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-date {
+  color: var(--muted);
+  font-size: 0.95rem;
 }

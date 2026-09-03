@@ -1,23 +1,78 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <h1>Hello, world.</h1>
-
-  <p>
-    This page is live. That is the only thing it is here to prove.
+---
+layout: default
+title: Home
+---
+<header class="intro">
+  <h1>Lucas Hoke</h1>
+  <p class="tagline">
+    Studying data science and machine learning at the Colorado School of
+    Mines with an interest in AI regulation and governance.
   </p>
+</header>
 
+<section>
   <p>
-    Everything about it is yours to delete. Open Claude Code in this folder and
-    tell it what you actually want to build.
+    Hi, I&rsquo;m Lucas! I&rsquo;m a senior student-athlete studying Computer
+    Science at the Colorado School of Mines, concentrating in data science
+    and applied statistics. In Spring 2027, I&rsquo;ll start my Master&rsquo;s
+    Non-Thesis Degree at Mines, pursuing an M.S. in Data Science with a
+    concentration in Business Analytics. I have previous internship
+    experience at Spectrum, where I created ML pipelines for customer
+    profiling initiatives, and Lockheed Martin Space, where I engineered
+    internal tooling for mission-critical applications. I&rsquo;m always
+    looking to learn more about the world of data science and engineering,
+    specifically in the realm of unstructured and spatial data. I&rsquo;m
+    also interested in staying on top of the newest initiatives surrounding
+    AI governance and regulation as agentic engineering and generative AI
+    continue to become an everyday factor in our lives.
   </p>
+</section>
 
-</body>
-</html>
+<section>
+  <h2>Outside of work and school</h2>
+  <ul>
+    <li>Being outdoors: swimming, hiking, and visiting new places</li>
+    <li>Collecting and listening to music</li>
+    <li>Horror and art-house movies</li>
+    <li>Reality TV (you could call me a Big Brother superfan)</li>
+  </ul>
+</section>
+
+<section id="lastfm" class="widget">
+  <h2>Last played</h2>
+  <p id="lastfm-track">Loading&hellip;</p>
+  <p class="widget-credit">
+    via <a href="https://www.last.fm/user/hokeluc" target="_blank" rel="noopener">last.fm</a>
+  </p>
+</section>
+
+<section class="links">
+  <h2>Elsewhere</h2>
+  <ul class="link-list">
+    <li><a href="https://www.linkedin.com/in/lucas-hoke/" target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href="https://github.com/hokeluc" target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href="https://x.com/hokeluc" target="_blank" rel="noopener">X (Twitter)</a></li>
+    <li><a href="mailto:lucas@lucashoke.com">Email</a></li>
+  </ul>
+</section>
+
+<script>
+  (function () {
+    var user = "hokeluc";
+    var url = "https://lastfm-last-played.biancarosa.com.br/" + user + "/latest-song";
+    var el = document.getElementById("lastfm-track");
+
+    fetch(url)
+      .then(function (response) {
+        if (!response.ok) throw new Error("bad response");
+        return response.json();
+      })
+      .then(function (data) {
+        var track = data.track;
+        el.textContent = track.name + " — " + track.artist["#text"];
+      })
+      .catch(function () {
+        el.textContent = "Couldn't load last played track right now.";
+      });
+  })();
+</script>

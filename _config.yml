@@ -1,0 +1,13 @@
+title: Lucas Hoke
+description: >-
+  Studying data science and machine learning at the Colorado School of Mines
+  with an interest in AI regulation and governance.
+url: "https://hokeluc.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: /blog/:title/
+
+exclude:
+  - README.md
+  - REQUIREMENTS.md
