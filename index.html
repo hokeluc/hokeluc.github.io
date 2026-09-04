@@ -68,10 +68,15 @@ title: Home
 
 <section id="lastfm">
   <div class="section-label"><span>Last played.</span></div>
-  <p id="lastfm-track">Loading&hellip;</p>
-  <p class="widget-credit">
-    via <a href="https://www.last.fm/user/hokeluc" target="_blank" rel="noopener">last.fm</a>
-  </p>
+  <div class="lastfm-row">
+    <img id="lastfm-art" class="lastfm-art" alt="" hidden>
+    <div>
+      <p id="lastfm-track">Loading&hellip;</p>
+      <p class="widget-credit">
+        via <a href="https://www.last.fm/user/hokeluc" target="_blank" rel="noopener">last.fm</a>
+      </p>
+    </div>
+  </div>
 </section>
 
 <footer class="links">
@@ -108,7 +113,29 @@ title: Home
   (function () {
     var user = "hokeluc";
     var url = "https://lastfm-last-played.biancarosa.com.br/" + user + "/latest-song";
-    var el = document.getElementById("lastfm-track");
+    var trackEl = document.getElementById("lastfm-track");
+    var artEl = document.getElementById("lastfm-art");
+    var LASTFM_PLACEHOLDER_HASH = "2a96cbd8b46e442fc41c2b86b821562f";
+
+    function showArt(src) {
+      artEl.src = src;
+      artEl.hidden = false;
+    }
+
+    // Last.fm's own hosted art is frequently a generic placeholder or
+    // missing entirely; fall back to album-art (Spotify-backed) only
+    // when that happens, so the common case makes zero extra requests.
+    function tryAlbumArtFallback(track) {
+      if (typeof albumArt !== "function") return;
+
+      albumArt(track.artist["#text"], { album: track.album["#text"], size: "large" })
+        .then(function (art) {
+          if (art) showArt(art);
+        })
+        .catch(function () {
+          // No art available anywhere — leave the widget text-only.
+        });
+    }
 
     fetch(url)
       .then(function (response) {
@@ -117,10 +144,20 @@ title: Home
       })
       .then(function (data) {
         var track = data.track;
-        el.textContent = track.name + " — " + track.artist["#text"];
+        trackEl.textContent = track.name + " — " + track.artist["#text"];
+
+        var images = track.image || [];
+        var large = images.find(function (i) { return i.size === "extralarge"; });
+        var src = large && large["#text"];
+
+        if (src && src.indexOf(LASTFM_PLACEHOLDER_HASH) === -1) {
+          showArt(src);
+        } else {
+          tryAlbumArtFallback(track);
+        }
       })
       .catch(function () {
-        el.textContent = "Couldn't load last played track right now.";
+        trackEl.textContent = "Couldn't load last played track right now.";
       });
   })();
 </script>
