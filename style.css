@@ -46,6 +46,11 @@ strong {
   color: var(--accent);
 }
 
+.text-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
