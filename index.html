@@ -47,9 +47,15 @@ title: Home
   </p>
 </section>
 
-<section>
+<div class="chevron-divider">
+  <a href="#hobbies" aria-label="Jump to hobbies section">
+    <span class="icon icon-chevron-down" aria-hidden="true"></span>
+  </a>
+</div>
+
+<section id="hobbies">
   <h2>Outside of work and school, my hobbies include:</h2>
-  <ul>
+  <ul class="plain-list">
     <li><strong>Outdoors:</strong> swimming, hiking, and traveling to new places.</li>
     <li><strong>Music:</strong> collecting and listening to records and CDs.</li>
     <li><strong>Movies:</strong> horror and art-house genres are my favorites!</li>
@@ -57,23 +63,43 @@ title: Home
   </ul>
 </section>
 
-<section id="lastfm" class="widget">
-  <h2>Last played</h2>
+<section id="lastfm">
+  <div class="section-label"><span>Last played.</span></div>
   <p id="lastfm-track">Loading&hellip;</p>
   <p class="widget-credit">
     via <a href="https://www.last.fm/user/hokeluc" target="_blank" rel="noopener">last.fm</a>
   </p>
 </section>
 
-<section class="links">
-  <h2>Elsewhere</h2>
-  <ul class="link-list">
-    <li><a href="https://www.linkedin.com/in/lucas-hoke/" target="_blank" rel="noopener">LinkedIn</a></li>
-    <li><a href="https://github.com/hokeluc" target="_blank" rel="noopener">GitHub</a></li>
-    <li><a href="https://x.com/hokeluc" target="_blank" rel="noopener">X (Twitter)</a></li>
-    <li><a href="mailto:lucas@lucashoke.com">Email</a></li>
+<footer class="links">
+  <div class="section-label"><span>Elsewhere.</span></div>
+  <ul class="icon-list">
+    <li>
+      <a href="https://www.linkedin.com/in/lucas-hoke/" target="_blank" rel="noopener">
+        <span class="icon icon-linkedin" aria-hidden="true"></span>
+        <span class="sr-only">LinkedIn</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/hokeluc" target="_blank" rel="noopener">
+        <span class="icon icon-github" aria-hidden="true"></span>
+        <span class="sr-only">GitHub</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://x.com/hokeluc" target="_blank" rel="noopener">
+        <span class="icon icon-twitter" aria-hidden="true"></span>
+        <span class="sr-only">X (Twitter)</span>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:lucas@lucashoke.com">
+        <span class="icon icon-envelope" aria-hidden="true"></span>
+        <span class="sr-only">Email</span>
+      </a>
+    </li>
   </ul>
-</section>
+</footer>
 
 <script>
   (function () {
