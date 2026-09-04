@@ -241,13 +241,15 @@ a:hover .icon {
 .lastfm-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem; /* 16px */
 }
 
 .lastfm-art {
   flex-shrink: 0;
-  width: 64px;
-  height: 64px;
+  width: 4rem; /* 64px, stays under the two-line text block's natural height */
+  height: 4rem;
+  max-height: 100%;
   border-radius: 4px;
   object-fit: cover;
 }
