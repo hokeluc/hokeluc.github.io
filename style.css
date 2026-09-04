@@ -238,6 +238,24 @@ a:hover .icon {
   margin: 0.5rem 0 0; /* 8px */
 }
 
+.lastfm-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* 16px */
+}
+
+.lastfm-art {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.lastfm-row #lastfm-track {
+  margin: 0;
+}
+
 .icon-list {
   list-style: none;
   padding: 0;

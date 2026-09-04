@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Geist+Pixel&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+  {% if page.url == "/" %}
+  <script src="https://cdn.jsdelivr.net/npm/album-art@4.0.4/index.min.js"></script>
+  {% endif %}
 </head>
 <body>
 
