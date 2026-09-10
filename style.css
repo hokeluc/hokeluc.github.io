@@ -36,6 +36,16 @@ body {
   padding: 3rem 1.5rem 6rem; /* 48px 24px 96px */
   line-height: 1.6;
   font-size: 1.5rem; /* 24px */
+  position: relative;
+}
+
+#wave-bg {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
 }
 
 a {
