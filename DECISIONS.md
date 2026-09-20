@@ -39,3 +39,5 @@ As I potentially add more pages and/or add more interactive blog posts, I can co
 ## 5. What is still wrong
 
 On site load, particularly in new environments, some components are slow to load, including some of my fonts and my last.fm widget. I'd like to figure out how to optimize the load time, particularly because the website is static. I can use Cloudflare metrics as one of multiple tools to help debug this issue.
+
+When using the last.fm widget, visiting my account after viewing the widget results (song and corresponding album art) rate-limits the user in some cases. This currently puzzles me because an external API is used to request the last played track, so I'll have to do some more research.
