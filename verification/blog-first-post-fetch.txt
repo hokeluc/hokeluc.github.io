@@ -1,0 +1,61 @@
+=== /blog/ ===
+HTTP/2 200 
+date: Sun, 20 Sep 2026 20:56:52 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+last-modified: Thu, 10 Sep 2026 20:15:37 GMT
+access-control-allow-origin: *
+speculation-rules: "/cdn-cgi/speculation"
+expires: Sun, 20 Sep 2026 20:44:36 GMT
+cache-control: max-age=600
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-proxy-cache: MISS
+x-github-request-id: 0B68:181307:2D2CEF1:328D420:6AB0435C
+x-github-edge-region: iad
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=LgLG8WHcU%2BlKLB2n3ygVUzvlDRW9301nhCQGP3lHwtuwDSZic6mr%2Fv4jQJIN5zi2uYK%2B1lNe6If0oXinJmSaCRebuiGScG3u%2F%2B%2F%2BnySm3M6Ex%2BcZ4N4a8cj3PfIWAzPf"}]}
+age: 0
+via: 1.1 varnish
+x-served-by: cache-den-kden1300055-DEN
+x-cache: HIT
+x-cache-hits: 0
+x-timer: S1789937812.351433,VS0,VE78
+vary: Accept-Encoding
+x-fastly-request-id: 7e69b661d35f642933b381d9606cfd5312a5f9bb
+cf-cache-status: DYNAMIC
+cf-ray: a3e3bd3f1f02e667-DEN
+alt-svc: h3=":443"; ma=86400
+
+
+--- post links found ---
+href="/blog/first-post/"
+
+=== /blog/first-post/ ===
+HTTP/2 200 
+date: Sun, 20 Sep 2026 20:56:56 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+x-origin-cache: HIT
+last-modified: Thu, 10 Sep 2026 20:15:37 GMT
+access-control-allow-origin: *
+speculation-rules: "/cdn-cgi/speculation"
+expires: Sun, 20 Sep 2026 20:44:41 GMT
+cache-control: max-age=600
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-proxy-cache: MISS
+x-github-request-id: AA06:3E788C:2AA305B:3004E59:6AB04361
+x-github-edge-region: iad
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3O%2FF87rtj2N3joP8dI%2FLxtfqP0ve06gohdgoZCQpHBTuKOxXOivOdEZB%2B%2B65L2aKxyVHiaZ0hrGS2%2FK46BZX1IMsHKIbVV%2FYPBzBeEETLJAunbhWZmjb47rkDAU6ikhi"}]}
+age: 0
+via: 1.1 varnish
+x-served-by: cache-den-kden1300055-DEN
+x-cache: HIT
+x-cache-hits: 0
+x-timer: S1789937816.926189,VS0,VE95
+vary: Accept-Encoding
+x-fastly-request-id: 5cdc5701c54e40215fc9b92db6f7717ddb709f24
+cf-cache-status: DYNAMIC
+cf-ray: a3e3bd555c7efc0f-DEN
+alt-svc: h3=":443"; ma=86400
+
+--- title ---
+<title>First post · Lucas Hoke</title>

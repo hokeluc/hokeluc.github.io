@@ -1,0 +1,33 @@
+HTTP/2 200 
+date: Sun, 20 Sep 2026 20:56:51 GMT
+content-type: application/pdf
+content-length: 30099
+server: cloudflare
+x-origin-cache: HIT
+last-modified: Thu, 10 Sep 2026 20:15:37 GMT
+access-control-allow-origin: *
+etag: "6aa30fe9-7593"
+expires: Sun, 20 Sep 2026 20:44:41 GMT
+cache-control: max-age=14400
+x-proxy-cache: MISS
+x-github-request-id: BEBE:7E471:2F25A98:3381864:6AB02B2C
+x-github-edge-region: iad
+accept-ranges: bytes
+age: 0
+via: 1.1 varnish
+x-served-by: cache-den-kden1300054-DEN
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1789930284.333238,VS0,VE68
+vary: Accept-Encoding
+x-fastly-request-id: e96453681236ece87590d160b62f2a90c7e343a0
+cf-cache-status: REVALIDATED
+speculation-rules: "/cdn-cgi/speculation"
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=qZZWgXjxaK18pobOXMnQbUqa3Rv7DKJ2eO2%2BHwsz7JPINsJpd%2BzuRHIbfkM0l0CIzNjhmviYGiBral%2BXQmlKJ2hGSSfGmEo8uKssjy64bkP7FjMNicdsGla2W7y9MUnH"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-ray: a3e3bd36ba8112af-DEN
+alt-svc: h3=":443"; ma=86400
+
+
+--- file type ---
+/tmp/verify/resume.pdf: PDF document, version 1.5
