@@ -1,5 +1,11 @@
 URL checked: https://lucashoke.com
-When: 2026-09-20 14:57 (local time)
+When: 2026-09-20 15:09 (local time)
+
+Note: headless Chromium screenshots do not capture OS/browser chrome, so
+the address bar is not naturally visible in a screenshot. Each screenshot
+below has a fixed banner injected via `location.href` before capture,
+showing the exact URL the page was loaded from at the moment of the
+screenshot.
 
 Checks performed:
 - home-screenshot.png / home-fetch.txt — homepage returns 200, title is
