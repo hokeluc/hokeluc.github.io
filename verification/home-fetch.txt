@@ -1,0 +1,31 @@
+HTTP/2 200 
+date: Sun, 20 Sep 2026 20:56:47 GMT
+content-type: text/html; charset=utf-8
+server: cloudflare
+last-modified: Thu, 10 Sep 2026 20:15:37 GMT
+access-control-allow-origin: *
+speculation-rules: "/cdn-cgi/speculation"
+expires: Sun, 20 Sep 2026 20:39:25 GMT
+cache-control: max-age=600
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+x-proxy-cache: MISS
+x-github-request-id: 7734:2C1252:1ACCFFF:21F7C5D:6AB04225
+x-github-edge-region: iad
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=w%2BrXfptJlaD4%2Fbhz3%2FXbDNInk2qKnOn4MqOqT5HnmeOdNinfPn7kp3ZSPeOvx7bJbp6OKVEPHsQ45M8%2BRsGa47nrcd%2F370wPa9qAjZDHl5ptYgzlHR9sOgHPw6Qqu8Qm"}]}
+age: 0
+via: 1.1 varnish
+x-served-by: cache-den-kden1300055-DEN
+x-cache: HIT
+x-cache-hits: 0
+x-timer: S1789937807.360794,VS0,VE78
+vary: Accept-Encoding
+x-fastly-request-id: 4303f74e6dbb790fa6d779bf068dfba12e3f89be
+cf-cache-status: DYNAMIC
+cf-ray: a3e3bd1fdd96e64d-DEN
+alt-svc: h3=":443"; ma=86400
+
+
+--- title match ---
+<title>Home · Lucas Hoke</title>
+--- wave-background.js present in body ---
+assets/js/wave-background.js

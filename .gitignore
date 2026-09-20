@@ -1,7 +1,6 @@
 .DS_Store
 Thumbs.db
 .claude/
-DECISIONS.md
+.playwright-mcp/
 RESOURCES.md
 REQUIREMENTS.md
-website_pic.png

@@ -46,6 +46,8 @@ body {
   height: 100%;
   z-index: -1;
   pointer-events: none;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 a {
