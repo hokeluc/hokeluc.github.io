@@ -110,7 +110,7 @@ title: Home
 </footer>
 
 <script>
-  (function () {
+  document.addEventListener("DOMContentLoaded", function () {
     var user = "hokeluc";
     var url = "https://lastfm-last-played.biancarosa.com.br/" + user + "/latest-song";
     var trackEl = document.getElementById("lastfm-track");
@@ -159,5 +159,5 @@ title: Home
       .catch(function () {
         trackEl.textContent = "Couldn't load last played track right now.";
       });
-  })();
+  });
 </script>
